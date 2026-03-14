@@ -43,9 +43,9 @@ Once you use a recovery code to regain access to your account, it cannot be reus
 
 Most TOTP apps support backups. If you lose access to your authentication device, you can use your TOTP app backup to access your authentication method on a different authentication device, ensuring continued access to your 2FA-enabled account.
 
-The process of configuring backups is different for each TOTP app. For some examples from popular TOTP apps, see the following documentation:
+The process of configuring backups is different for each TOTP app. For some examples from popular TOTP apps (including general backup guidance that covers stored TOTP items), see the following documentation:
 
-- [1Password](https://support.1password.com/backups/)
+- [1Password (general backups, including stored TOTP items)](https://support.1password.com/backups/)
 - [Google Authenticator](https://security.googleblog.com/2023/04/google-authenticator-now-supports.html)
 - [Microsoft Authenticator](https://support.microsoft.com/en-us/account-billing/back-up-and-recover-account-credentials-in-the-authenticator-app-bb939936-7a8d-4e88-bc43-49bc1a700a40)
 
@@ -61,7 +61,7 @@ SSH keys can be configured and used for account recovery if ever required. Authe
 Personal access tokens (PATs) can be configured as recovery methods. If you lose your primary 2FA methods, GitHub can prompt you to enter a recovery PAT to verify access. After creating a PAT, add it as a recovery method in your 2FA settings so it is available when you need it. To set up one or more PATs that can be used to recover access, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
 
 > [!NOTE]
-> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and provide full access after you regain your account. GitHub requires this scope for recovery PATs, and it grants full control of private repositories, so store the token securely and use it only for recovery.
+> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and provide full access after you regain your account. GitHub requires this scope for recovery PATs, and it grants full control of private repositories, so store the token securely, use it only for recovery, and revoke it after you regain access.
 
 ## Verified devices
 
