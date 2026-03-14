@@ -51,17 +51,17 @@ The process of configuring backups is different for each TOTP app. For some exam
 
 ## SSH keys
 
-SSH keys can be configured and used for account recovery if ever required. SSH keys do not replace 2FA; instead, an authentication-type SSH key acts as an alternate verification method during account recovery. When you add SSH keys with the authentication type, GitHub can treat them as recovery methods and prompt you to use a key to verify access if you lose your primary 2FA methods. To set up one or more SSH keys that can be used to recover access to your 2FA-enabled account, see [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+SSH keys can be configured and used for account recovery if ever required. SSH keys do not replace 2FA; instead, an authentication-type SSH key acts as an alternate verification method during account recovery. After you add SSH keys with the authentication type, GitHub can treat them as recovery methods. If you lose your primary 2FA methods, GitHub can prompt you to use a key to verify access. To set up one or more SSH keys that can be used to recover access to your 2FA-enabled account, see [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 > [!NOTE]
 > Be sure to choose 'authentication' as the key's type during this process.
 
 ## Personal access tokens
 
-Personal access tokens (PATs) can be configured and used for recovery if ever needed. When a PAT is configured as a recovery method, GitHub can prompt you to enter that token to verify access if you lose your primary 2FA methods. After creating a PAT, add it as a recovery method in your 2FA settings so it is available during recovery. To set up one or more PATs that can be used to recover access, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
+Personal access tokens (PATs) can be configured and used for recovery if ever needed. When a PAT is configured as a recovery method, GitHub can prompt you to enter that token to verify access if you lose your primary 2FA methods. After creating a PAT, add it as a recovery method in your 2FA settings. This ensures it is available during recovery. To set up one or more PATs that can be used to recover access, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
 
 > [!NOTE]
-> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and provide full access after you regain your account.
+> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and provide full access after you regain your account. This scope grants broad repository access, so store the token securely and use it only for recovery.
 
 ## Verified devices
 
