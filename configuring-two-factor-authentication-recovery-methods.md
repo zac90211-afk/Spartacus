@@ -2,9 +2,9 @@
 
 You can set up a variety of recovery methods to access your account if you lose your two-factor authentication credentials.
 
-In addition to securely storing your two-factor authentication (2FA) recovery codes, we strongly recommend configuring two or more authentication methods to avoid losing access to your account. For more information, see [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key).
+In addition to securely storing your two-factor authentication (2FA) recovery codes, we strongly recommend configuring two or more authentication methods to avoid losing access to your account. For more information about configuring authentication methods such as security keys, see [Configuring two-factor authentication](/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key).
 
-As well as configuring authentication methods, we also strongly suggest setting up some 2FA recovery methods which may be helpful if you were ever to lose your authentication methods. Recovery methods available to be configured include: the account's recovery codes file, SSH key(s), Personal access tokens (PATs) and verified device(s).
+As well as configuring authentication methods (your primary sign-in options), we also strongly suggest setting up some 2FA recovery methods as fallback options if you lose access to those authentication methods. Recovery methods available to be configured include: the account's recovery codes file, SSH key(s), Personal access tokens (PATs) and verified device(s).
 
 ## About the recovery codes file
 
@@ -61,7 +61,7 @@ SSH keys can be configured and used for account recovery if ever required. Authe
 Personal access tokens (PATs) can be configured as recovery methods. If you lose your primary 2FA methods, GitHub can prompt you to enter a recovery PAT to verify access. After creating a PAT, add it as a recovery method in your 2FA settings so it is available when you need it. To set up one or more PATs that can be used to recover access, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
 
 > [!NOTE]
-> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and provide full access after you regain your account. This scope grants full control of private repositories, so store the token securely and use it only for recovery.
+> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and provide full access after you regain your account. GitHub requires this scope for recovery PATs, and it grants full control of private repositories, so store the token securely and use it only for recovery.
 
 ## Verified devices
 
