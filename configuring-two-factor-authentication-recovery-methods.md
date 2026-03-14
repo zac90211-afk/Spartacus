@@ -51,17 +51,21 @@ The process of configuring backups is different for each TOTP app. For some exam
 
 ## SSH keys
 
-SSH keys can be configured and used for account recovery if ever required. When you add SSH keys with the authentication type, GitHub can treat them as recovery methods if you lose access to your primary 2FA methods. To set up 1 or more SSH keys that can be used to recover access to your 2FA-enabled account, see [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+SSH keys can be configured and used for account recovery if ever required. When you add SSH keys with the authentication type, GitHub can treat them as recovery methods and prompt you to use a key to verify access if you lose your primary 2FA methods. To set up 1 or more SSH keys that can be used to recover access to your 2FA-enabled account, see [Adding a new SSH key to your GitHub account](/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 > [!NOTE]
 > Be sure to choose 'authentication' as the key's type during this process.
 
 ## Personal access tokens
 
-Personal access tokens (PATs) can be configured and used for recovery if ever needed. When a PAT is configured as a recovery method, GitHub can use it to verify access if you lose your primary 2FA methods. To set up 1 or more PATs that can be used to recover access, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
+Personal access tokens (PATs) can be configured and used for recovery if ever needed. When a PAT is configured as a recovery method, GitHub can prompt you to enter that token to verify access if you lose your primary 2FA methods. To set up 1 or more PATs that can be used to recover access, see [Managing your personal access tokens](/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
 
 > [!NOTE]
-> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery.
+> Be sure to choose 'repo' when choosing the 'scopes' available during this process so the token can access private repositories during recovery and meet the requirements for a recovery token.
+
+## Verified devices
+
+Verified devices are devices that you've successfully used to sign in with 2FA. Keeping at least one verified device available can help confirm your identity during recovery if you lose access to your primary 2FA methods. Review your verified devices in your account security settings and keep one device available for recovery.
 
 ## Further reading
 
